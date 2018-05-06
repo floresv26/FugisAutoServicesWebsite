@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Fugi's Auto Services</title>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Add Firebase -->
+	<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyCPM1mSBnkE2m55vsmEDs72TfzvihKwViA",
+	    authDomain: "fugis-auto-services-website.firebaseapp.com",
+	    databaseURL: "https://fugis-auto-services-website.firebaseio.com",
+	    projectId: "fugis-auto-services-website",
+	    storageBucket: "fugis-auto-services-website.appspot.com",
+	    messagingSenderId: "417534614857"
+	  };
+	  firebase.initializeApp(config);
+	</script> <!-- End Add Firebase -->
+
+	<!--  jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+	<!-- Header -->
+	<header>
+		<div class="header-wrapper">
+			<div class="location-header">
+				<p>3039 Maple Avenue</p>
+				<p>Brookfield, IL 60513</p>
+				<a href="tel:1-708-255-5464">(708) 255-5464</a>
+				<a href="mailto:someone@example.com?Subject=Fugi's%20Auto%20Inquiry" target="_top">fugisauto@fugisauto.com</a>
+			</div>	
+		</div>
+
+		<div class="header-wrapper">
+			<div id="nav-bar">
+				<ul>
+					<li class="nav-item active"><a href="#index.html">Home</a></li>
+					<li class="nav-item"><a href="#services">Services</a></li>
+					<li class="nav-item"><a href="#contact-us">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+	</header> <!-- End Header -->
+
+	<!-- Content -->
+	<div id="content-wrapper">
+		<!-- HOME SECTION -->
+		<div id="home" class="section">
+			<h1>FUGI'S AUTO SERVICES</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id assumenda omnis nisi similique laboriosam fuga vel, illum, saepe quibusdam, excepturi ut nam aliquid deserunt accusamus soluta unde! Eveniet, iusto nostrum.</p>
+		</div> <!-- END HOME SECTION -->
+
+		<!-- SERVICES SECTION -->
+		<div id="services" class="section">
+			<h2>SERVICES</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur nam odit iure distinctio mollitia vero laudantium illo blanditiis aut magnam quidem quisquam temporibus voluptatibus et, perspiciatis accusamus excepturi sequi molestiae?</p>
+			
+			<div class="sub-section">
+				<h4>What We Do:</h4>
+				<ul class="list">
+					<li class="service-list-item">Expert Diagnostics</li>
+					<li class="service-list-item">Specialize in Mercedes-Benz</li>
+					<li class="service-list-item">Specialize in BMW Series</li>
+					<li class="service-list-item">Minor Body Work</li>
+					<li class="service-list-item">Car Wash and Full Detail</li>
+					<li class="service-list-item">Remote Start and Alarm Installation</li>
+					<li class="service-list-item">Custom Audio Installation</li>
+				</ul>
+			</div>
+	
+			<div class="sub-section">
+				<h4>Shuttle Services:</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum quam suscipit nulla molestias similique, rerum explicabo aperiam quidem natus. Sunt praesentium earum a tempore obcaecati modi repellat consectetur doloribus veniam.</p>
+				<ul id="shuttle-list" class="list">
+					<li>Broadview</li>
+					<li>Brookfield</li>
+					<li>Countryside</li>
+					<li>Hillside</li>
+					<li>La Grange</li>
+					<li>La Grange Highlands</li>
+					<li>La Grange Park</li>
+					<li>Lyons</li>
+					<li>North Riverside</li>
+					<li>Riverside</li>
+					<li>Westchester</li>
+					<li>Western Springs</li>
+				</ul>
+
+				<div id="shuttle-list-mult"></div>
+			</div>
+		</div> <!-- END SERVICES SECTION -->
+
+		<!-- CONTACT US SECTION -->
+		<div id="contact-us" class="section">
+			<h2>CONTACT US</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident maxime sint, repudiandae dicta beatae assumenda dolore soluta sequi reiciendis commodi voluptatum doloremque nemo laboriosam, ex deleniti, omnis facere fugit eaque.</p>
+
+			<div class="sub-section">
+				<h6>Hours of Operation</h6>
+				<table>
+					<tr>
+						<td>Monday - Friday:</td>
+						<td>9:00am - 6:00pm</td>
+					</tr>
+					<tr>
+						<td>Saturday:</td>
+						<td>By appointment</td>
+					</tr>
+					<tr>
+						<td>Sunday:</td>
+						<td>Closed</td>
+					</tr>
+				</table>
+			</div>	
+
+			<div class="sub-section">
+				<div class="location-section">
+					<h6>Where We're Located</h6>
+					<p>Fugi's Auto Services</p>
+					<p>3039 Maple Avenue</p>
+					<p>Brookfield, IL 60513</p>
+					<a href="tel:1-708-255-5464">(708) 255-5464</a>
+					<a href="mailto:someone@example.com?Subject=Fugi's%20Auto%20Inquiry" target="_top">fugisauto@fugisauto.com</a>
+				</div>
+				
+				<iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11890.7139650541!2d-87.86022499661392!3d41.83522077912368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e35f420dffd4b%3A0x783b689764bf8f04!2s3039+Maple+Ave%2C+Brookfield%2C+IL+60513!5e0!3m2!1sen!2sus!4v1524448538257" width="250" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+					
+			</div>
+		</div> <!-- END CONTACT US SECTION -->
+
+	</div> <!-- End Content -->
+
+	<!-- Footer -->
+	<footer>
+		<a href="tel:1-708-255-5464">(708) 255-5464</a>
+		<a href="mailto:someone@example.com?Subject=Fugi's%20Auto%20Inquiry" target="_top">fugisauto@fugisauto.com</a>
+		<p>&copy Copyright 2018</p>
+	</footer>
+
+	<script src="js/index.js" type="text/javascript"></script>
+</body>
+</html>
